@@ -1,0 +1,222 @@
+.ma-root {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Helvetica', 'Arial', 'Roboto', sans-serif;
+    /*border-radius: 26px;*/
+    background-color: #ffffff;
+}
+.ma-root header {
+    background-color: #f5f5fb;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 26px 26px;
+}
+.ma-root .app-header {
+    padding: 26px 26px 0 26px;
+    display: flex;
+}
+.ma-root .app-title {
+    flex: 1;
+    font-size: 22px;
+    font-weight: bold;
+    color: #282828;
+}
+.ma-root .app-options {
+    display: flex;
+}
+.ma-root .app-option {
+    width: 26px;
+    height: 26px;
+}
+.ma-root .horizontal-scrollbar {
+    overflow-x: auto;
+}
+.ma-root .horizontal-scrollbar > * {
+    width: fit-content;
+}
+.ma-root .contact-list {
+    list-style-type: none;
+    padding: 26px 0 26px 26px;
+    display: flex;
+}
+.ma-root .contact {
+    position: relative;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #d4dbf9;
+    margin-right: 16px;
+}
+.ma-root .contact-list:after {
+    display: block;
+    content: " ";
+    width: 10px;
+}
+.ma-root .contact img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ma-root .contact-online:after {
+    position: absolute;
+    content: " ";
+    display: block;
+    background-color: #00ff00;
+    width: 5px;
+    height: 5px;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #00ff00;
+}
+.ma-root .search-bar {
+    padding: 0 26px 26px 26px;
+    display: flex;
+}
+.ma-root .search-bar .search-icon {
+    width: 64px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 8px 0 0 8px;
+    overflow: hidden;
+}
+.ma-root .search-bar input[type=search] {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 0 8px 8px 0;
+    overflow: hidden;
+    flex: 1;
+}
+.ma-root .search-bar input[type=search]::placeholder {
+    color: #b7bfdb;
+}
+
+.ma-root main {
+    flex: 1;
+    background-color: #373759;
+    display: flex;
+    flex-direction: column;
+}
+.ma-root main > *:first-child {
+    background-color: #ffffff;
+    flex: 1;
+}
+.ma-root .vertical-scrollbar {
+    overflow-y: auto;
+}
+.ma-root .vertical-scrollbar > * {
+    height: fit-content;
+}
+.ma-root .chat-list {
+    padding: 16px 0 0 0;
+    list-style-type: none;
+}
+.ma-root .chat {
+    display: flex;
+    padding: 16px;
+}
+.ma-root .chat-photo {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.ma-root .chat-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ma-root .chat-online .chat-photo:after {
+    position: absolute;
+    content: " ";
+    display: block;
+    background-color: #00ff00;
+    width: 5px;
+    height: 5px;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #00ff00;
+}
+.ma-root .chat-details {
+    flex: 1;
+    padding: 0 8px;
+}
+.ma-root .chat-contact-name {
+    font-weight: bold;
+    font-size: 18px;
+    color: hsl(0deg, 0%, 0%, 90%);
+}
+.ma-root .chat-message-text {
+    font-size: 16px;
+    color: hsl(0deg, 0%, 0%, 75%);
+}
+.ma-root .chat-last-seen {
+    font-size: 14px;
+    color: #b7bfdb;
+}
+.ma-root main:after {
+    content: " ";
+    display: block;
+    padding-bottom: 26px;
+    border-radius: 0 0 26px 26px;
+    background-color: #ffffff;
+}
+.ma-root footer {
+    background-color: #373759;
+}
+.ma-root .nav-options {
+    list-style-type: none;
+    display: flex;
+}
+.ma-root .nav-option {
+    flex: 1;
+    height: 26px;
+    padding: 16px;
+}
+
+
+
+
+
+
+.ma-root .icon-more, .ma-root .icon-add, .ma-root .icon-search,
+.ma-root .icon-message, .ma-root .icon-contact, .ma-root .icon-settings,
+.ma-root .icon-message-i, .ma-root .icon-contact-i, .ma-root .icon-settings-i {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.ma-root .icon-more {
+    background-image: url('../icons/more.svg');
+}
+.ma-root .icon-add {
+    background-image: url('../icons/add.svg');
+}
+.ma-root .icon-search {
+    background-image: url('../icons/search.svg');
+}
+
+.ma-root .icon-message {
+    background-image: url('../icons/message.svg');
+}
+.ma-root .icon-contact {
+    background-image: url('../icons/contact.svg');
+}
+.ma-root .icon-settings {
+    background-image: url('../icons/settings.svg');
+}
+.ma-root .icon-message-i {
+    background-image: url('../icons/message-inactive.svg');
+}
+.ma-root .icon-contact-i {
+    background-image: url('../icons/contact-inactive.svg');
+}
+.ma-root .icon-settings-i {
+    background-image: url('../icons/settings-inactive.svg');
+}
